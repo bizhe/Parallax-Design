@@ -1,0 +1,193 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*Parallax*/
+
+.header-section{
+    position: relative;
+    height: 600px;
+    width: 0 auto;
+    background-image: url("../img/sea.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.jumbotron{
+    background: none;
+    padding: 0;
+}
+
+.logo{
+    width: 100%;
+    height: 196px;
+    background-image: url("../img/logo.png");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -80px;
+}
+
+/*Products Grid*/
+
+.col-md-4{
+    margin-top: 15px;
+}
+figure{
+    position: relative;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+}
+.is-showing{
+    opacity: 1;
+    transform: translateX(0px)
+}
+figure img{
+    display: block;
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+}
+
+figcaption{
+    position: absolute;
+    bottom: 10px;
+    left: -100%;
+    color: white;
+    background: black;
+    padding: 2px 8px;
+    font-size: 14px;
+    transition: all 0.5s ease-in-out;
+}
+
+/*Brand Description*/
+.title{
+    text-align: center;
+}
+.title .brand-title{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #ccc;
+}
+
+/*Large Pics*/
+
+.large-window{
+    height: 400px;
+    width: 400px;
+    background-image: url("../img/model.jpg");
+    background-repeat: repeat-y;
+    background-position: center 0px;
+    background-attachment: fixed;
+    margin-top: 30px;
+    border-radius: 50%;
+    position:relative;
+}
+
+.window-tint{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo-text{
+    color: white;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 1;
+}
+.promo-text b{
+    display: block;
+    font-size: 30px;
+    
+}
+
+.promo-text b span{
+    font-weight: 300;
+    font-size: 18px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.6);
+}
+.shop-link{
+    background-color: transparent;
+    border-color: #ccc;
+}
+
+/*Blog*/
+
+.blog-posts{
+    margin-top: 80px;
+}
+.post{
+    background: white;
+    position: relative;
+}
+.post-1{
+    transform: translate(100px, 20px);
+}
+.post-2{
+    z-index: 3;
+}
+.post-3{
+    transform: translate(-100px, 20px);
+}
+
+/*Footer*/
+
+.footer{
+    background: black;
+    color: white;
+    padding: 40px 0;
+   
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a{
+    color: white;
+}
+
+.footer-stuff{
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.footer-stuff ul li{
+    list-style-type: none;
+}
+
+.footer-stuff ul li a{
+    text-decoration: none;
+    color: #007bff;
+}
+.footer-stuff ul li a:hover{
+    color: white;
+}
+
+.content{
+    position: relative;
+    z-index: 2;
+    background: white;
+    margin-bottom: 270px;
+}
+
+.test{
+    padding-top: 50px;
+}
